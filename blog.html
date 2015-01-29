@@ -1,0 +1,22 @@
+<head>
+  <title>blog</title>
+</head>
+
+<body>
+  {{> blog}}
+</body>
+
+<template name="blog">
+    <h1>MeteorJS Blog</h1>
+    {{#each blogs}}
+        <h4>{{title}}</h4>
+        <p>{{body}}</p>
+    {{/each}}
+
+    <input type="text" placeholder="Title" name="title" id="title">
+    <br>
+    <textarea name="body" id="body" cols="30" rows="10" placeholder="Body"></textarea>
+    <br>
+    <button id="submit">Submit</button>
+        
+</template>
